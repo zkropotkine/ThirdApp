@@ -14,6 +14,17 @@
 		DADC8CCD19ECCC0B0071F3A3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DADC8CCC19ECCC0B0071F3A3 /* Images.xcassets */; };
 		DADC8CD019ECCC0B0071F3A3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DADC8CCE19ECCC0B0071F3A3 /* LaunchScreen.xib */; };
 		DADC8CDC19ECCC0B0071F3A3 /* ThirdAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DADC8CDB19ECCC0B0071F3A3 /* ThirdAppTests.m */; };
+		DADC8CE819ECDB370071F3A3 /* FriendsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DADC8CE719ECDB370071F3A3 /* FriendsVC.m */; };
+		DADC8CEB19ECDB850071F3A3 /* FlightsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DADC8CEA19ECDB850071F3A3 /* FlightsVC.m */; };
+		DADC8CEE19ECDB930071F3A3 /* DatesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DADC8CED19ECDB920071F3A3 /* DatesVC.m */; };
+		DADC8CF219ECDD6E0071F3A3 /* FriendsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DADC8CF119ECDD6E0071F3A3 /* FriendsCell.m */; };
+		DADC8CFC19ECE9BA0071F3A3 /* bart.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC8CF519ECE9BA0071F3A3 /* bart.png */; };
+		DADC8CFD19ECE9BA0071F3A3 /* bobo.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC8CF619ECE9BA0071F3A3 /* bobo.png */; };
+		DADC8CFE19ECE9BA0071F3A3 /* homer.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC8CF719ECE9BA0071F3A3 /* homer.png */; };
+		DADC8CFF19ECE9BA0071F3A3 /* lisa.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC8CF819ECE9BA0071F3A3 /* lisa.png */; };
+		DADC8D0019ECE9BA0071F3A3 /* marge.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC8CF919ECE9BA0071F3A3 /* marge.png */; };
+		DADC8D0119ECE9BA0071F3A3 /* ruprecht.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC8CFA19ECE9BA0071F3A3 /* ruprecht.png */; };
+		DADC8D0219ECE9BA0071F3A3 /* scully.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC8CFB19ECE9BA0071F3A3 /* scully.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +51,21 @@
 		DADC8CD519ECCC0B0071F3A3 /* ThirdAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThirdAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DADC8CDA19ECCC0B0071F3A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DADC8CDB19ECCC0B0071F3A3 /* ThirdAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdAppTests.m; sourceTree = "<group>"; };
+		DADC8CE619ECDB370071F3A3 /* FriendsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsVC.h; sourceTree = "<group>"; };
+		DADC8CE719ECDB370071F3A3 /* FriendsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsVC.m; sourceTree = "<group>"; };
+		DADC8CE919ECDB850071F3A3 /* FlightsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlightsVC.h; sourceTree = "<group>"; };
+		DADC8CEA19ECDB850071F3A3 /* FlightsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlightsVC.m; sourceTree = "<group>"; };
+		DADC8CEC19ECDB920071F3A3 /* DatesVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatesVC.h; sourceTree = "<group>"; };
+		DADC8CED19ECDB920071F3A3 /* DatesVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatesVC.m; sourceTree = "<group>"; };
+		DADC8CF019ECDD6E0071F3A3 /* FriendsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsCell.h; sourceTree = "<group>"; };
+		DADC8CF119ECDD6E0071F3A3 /* FriendsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsCell.m; sourceTree = "<group>"; };
+		DADC8CF519ECE9BA0071F3A3 /* bart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bart.png; sourceTree = "<group>"; };
+		DADC8CF619ECE9BA0071F3A3 /* bobo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bobo.png; sourceTree = "<group>"; };
+		DADC8CF719ECE9BA0071F3A3 /* homer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homer.png; sourceTree = "<group>"; };
+		DADC8CF819ECE9BA0071F3A3 /* lisa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lisa.png; sourceTree = "<group>"; };
+		DADC8CF919ECE9BA0071F3A3 /* marge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marge.png; sourceTree = "<group>"; };
+		DADC8CFA19ECE9BA0071F3A3 /* ruprecht.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ruprecht.png; sourceTree = "<group>"; };
+		DADC8CFB19ECE9BA0071F3A3 /* scully.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scully.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +107,8 @@
 		DADC8CBE19ECCC0B0071F3A3 /* ThirdApp */ = {
 			isa = PBXGroup;
 			children = (
+				DADC8CEF19ECDD500071F3A3 /* Customized */,
+				DADC8CE519ECD8990071F3A3 /* VC */,
 				DADC8CC319ECCC0B0071F3A3 /* AppDelegate.h */,
 				DADC8CC419ECCC0B0071F3A3 /* AppDelegate.m */,
 				DADC8CC619ECCC0B0071F3A3 /* ViewController.h */,
@@ -96,6 +124,7 @@
 		DADC8CBF19ECCC0B0071F3A3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DADC8CF319ECE9BA0071F3A3 /* images */,
 				DADC8CC019ECCC0B0071F3A3 /* Info.plist */,
 				DADC8CC119ECCC0B0071F3A3 /* main.m */,
 			);
@@ -117,6 +146,50 @@
 				DADC8CDA19ECCC0B0071F3A3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DADC8CE519ECD8990071F3A3 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				DADC8CE619ECDB370071F3A3 /* FriendsVC.h */,
+				DADC8CE719ECDB370071F3A3 /* FriendsVC.m */,
+				DADC8CE919ECDB850071F3A3 /* FlightsVC.h */,
+				DADC8CEA19ECDB850071F3A3 /* FlightsVC.m */,
+				DADC8CEC19ECDB920071F3A3 /* DatesVC.h */,
+				DADC8CED19ECDB920071F3A3 /* DatesVC.m */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		DADC8CEF19ECDD500071F3A3 /* Customized */ = {
+			isa = PBXGroup;
+			children = (
+				DADC8CF019ECDD6E0071F3A3 /* FriendsCell.h */,
+				DADC8CF119ECDD6E0071F3A3 /* FriendsCell.m */,
+			);
+			name = Customized;
+			sourceTree = "<group>";
+		};
+		DADC8CF319ECE9BA0071F3A3 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				DADC8CF419ECE9BA0071F3A3 /* friends */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		DADC8CF419ECE9BA0071F3A3 /* friends */ = {
+			isa = PBXGroup;
+			children = (
+				DADC8CF519ECE9BA0071F3A3 /* bart.png */,
+				DADC8CF619ECE9BA0071F3A3 /* bobo.png */,
+				DADC8CF719ECE9BA0071F3A3 /* homer.png */,
+				DADC8CF819ECE9BA0071F3A3 /* lisa.png */,
+				DADC8CF919ECE9BA0071F3A3 /* marge.png */,
+				DADC8CFA19ECE9BA0071F3A3 /* ruprecht.png */,
+				DADC8CFB19ECE9BA0071F3A3 /* scully.png */,
+			);
+			path = friends;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +241,7 @@
 				TargetAttributes = {
 					DADC8CBB19ECCC0B0071F3A3 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = QXF33N93KH;
 					};
 					DADC8CD419ECCC0B0071F3A3 = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -199,6 +273,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DADC8D0019ECE9BA0071F3A3 /* marge.png in Resources */,
+				DADC8D0219ECE9BA0071F3A3 /* scully.png in Resources */,
+				DADC8CFC19ECE9BA0071F3A3 /* bart.png in Resources */,
+				DADC8CFF19ECE9BA0071F3A3 /* lisa.png in Resources */,
+				DADC8D0119ECE9BA0071F3A3 /* ruprecht.png in Resources */,
+				DADC8CFE19ECE9BA0071F3A3 /* homer.png in Resources */,
+				DADC8CFD19ECE9BA0071F3A3 /* bobo.png in Resources */,
 				DADC8CCB19ECCC0B0071F3A3 /* Main.storyboard in Resources */,
 				DADC8CD019ECCC0B0071F3A3 /* LaunchScreen.xib in Resources */,
 				DADC8CCD19ECCC0B0071F3A3 /* Images.xcassets in Resources */,
@@ -219,8 +300,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DADC8CF219ECDD6E0071F3A3 /* FriendsCell.m in Sources */,
+				DADC8CEB19ECDB850071F3A3 /* FlightsVC.m in Sources */,
 				DADC8CC819ECCC0B0071F3A3 /* ViewController.m in Sources */,
+				DADC8CEE19ECDB930071F3A3 /* DatesVC.m in Sources */,
 				DADC8CC519ECCC0B0071F3A3 /* AppDelegate.m in Sources */,
+				DADC8CE819ECDB370071F3A3 /* FriendsVC.m in Sources */,
 				DADC8CC219ECCC0B0071F3A3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,9 +428,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ThirdApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -353,9 +441,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ThirdApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
