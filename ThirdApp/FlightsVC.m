@@ -20,7 +20,7 @@ NSMutableArray *friends;
 {
     [super viewDidLoad];
     
-    self.txtAeroline.enabled = NO;;
+    self.txtAeroline.enabled = NO;
     self.txtOrigin.enabled = NO;
     self.txtDestination.enabled = NO;
     

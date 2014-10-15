@@ -14,24 +14,64 @@
 
 @implementation DatesVC
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.txtDateDiff.enabled = NO;
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+- (IBAction)startDateEditingFinished:(id)sender
+{
+    NSLog(@"FAD");
+    NSLocale *usLocale = [[NSLocale alloc]
+                          initWithLocaleIdentifier:@"en_US"];
+    
+    NSDate *pickerDate = [self.dpStartDate date];
+    
+    NSString *selectionString = [[NSString alloc]
+                                 initWithFormat:@"%@",
+                                 [pickerDate descriptionWithLocale:usLocale]];
+    
+    self.txtDateDiff.text = selectionString;
+    self.txtDateDiff.adjustsFontSizeToFitWidth = YES;
 }
-*/
 
+- (IBAction)finishDateEditiingFinished:(id)sender
+{
+    NSLocale *usLocale = [[NSLocale alloc]
+                          initWithLocaleIdentifier:@"en_US"];
+    
+    NSDate *pickerDate = [self.dpFinishDate date];
+    
+    NSString *selectionString = [[NSString alloc]
+                                 initWithFormat:@"%@",
+                                 [pickerDate descriptionWithLocale:usLocale]];
+    
+    self.txtDateDiff.text = selectionString;
+    self.txtDateDiff.adjustsFontSizeToFitWidth = YES;
+}
+- (IBAction)chan:(id)sender
+{
+    NSLog(@"FAD");
+    NSLocale *usLocale = [[NSLocale alloc]
+                          initWithLocaleIdentifier:@"en_US"];
+    
+    NSDate *pickerDate = [self.dpStartDate date];
+    
+    NSString *selectionString = [[NSString alloc]
+                                 initWithFormat:@"%@",
+                                 [pickerDate descriptionWithLocale:usLocale]];
+    
+    self.txtDateDiff.text = selectionString;
+    self.txtDateDiff.adjustsFontSizeToFitWidth = YES;
+}
 @end

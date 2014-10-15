@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA3AC3EA19EE527F00F5E722 /* SimpsonsFamily.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA3AC3E919EE527F00F5E722 /* SimpsonsFamily.jpg */; };
 		DADC8CC219ECCC0B0071F3A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DADC8CC119ECCC0B0071F3A3 /* main.m */; };
 		DADC8CC519ECCC0B0071F3A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DADC8CC419ECCC0B0071F3A3 /* AppDelegate.m */; };
 		DADC8CC819ECCC0B0071F3A3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DADC8CC719ECCC0B0071F3A3 /* ViewController.m */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA3AC3E919EE527F00F5E722 /* SimpsonsFamily.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SimpsonsFamily.jpg; sourceTree = "<group>"; };
 		DADC8CBC19ECCC0B0071F3A3 /* ThirdApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThirdApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DADC8CC019ECCC0B0071F3A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DADC8CC119ECCC0B0071F3A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 		DADC8CF419ECE9BA0071F3A3 /* friends */ = {
 			isa = PBXGroup;
 			children = (
+				DA3AC3E919EE527F00F5E722 /* SimpsonsFamily.jpg */,
 				DADC8CF519ECE9BA0071F3A3 /* bart.png */,
 				DADC8CF619ECE9BA0071F3A3 /* bobo.png */,
 				DADC8CF719ECE9BA0071F3A3 /* homer.png */,
@@ -278,6 +281,7 @@
 				DADC8CFC19ECE9BA0071F3A3 /* bart.png in Resources */,
 				DADC8CFF19ECE9BA0071F3A3 /* lisa.png in Resources */,
 				DADC8D0119ECE9BA0071F3A3 /* ruprecht.png in Resources */,
+				DA3AC3EA19EE527F00F5E722 /* SimpsonsFamily.jpg in Resources */,
 				DADC8CFE19ECE9BA0071F3A3 /* homer.png in Resources */,
 				DADC8CFD19ECE9BA0071F3A3 /* bobo.png in Resources */,
 				DADC8CCB19ECCC0B0071F3A3 /* Main.storyboard in Resources */,
@@ -503,6 +507,7 @@
 				DADC8CE119ECCC0B0071F3A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DADC8CE219ECCC0B0071F3A3 /* Build configuration list for PBXNativeTarget "ThirdAppTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +516,7 @@
 				DADC8CE419ECCC0B0071F3A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

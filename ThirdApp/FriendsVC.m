@@ -53,9 +53,33 @@ NSMutableArray *friendImages;
     
     cell.txtFriend.text = friends[indexPath.row];
     cell.imgFriendCell.image = [UIImage imageNamed:friendImages[indexPath.row]];;
-
+    cell.btnShare.tag = indexPath.row;
     
     return cell;
+}
+
+- (IBAction)shareAllButtonPressed:(id)sender {
+    NSString *strShareMsg = @"Compartiendo la foto de Los Simpsons desde la app del curso de iOS.";
+    UIImage *imgShare    =  [UIImage imageNamed:@"SimpsonsFamily.jpg"];
+    NSArray *aShareItems = @[imgShare, strShareMsg];
+    
+    UIActivityViewController *actViewController = [[UIActivityViewController alloc] initWithActivityItems:aShareItems applicationActivities:nil];
+    
+    actViewController.excludedActivityTypes = [NSArray arrayWithObjects:UIActivityTypePrint, UIActivityTypeAssignToContact, UIActivityTypeCopyToPasteboard, UIActivityTypeAirDrop, UIActivityTypeMail, nil];
+    
+    [self presentViewController:actViewController animated:YES completion:nil];
+}
+
+- (IBAction)shareButtonPressed:(UIButton *)sender {
+    NSString *strShareMsg = [NSString stringWithFormat:@"%@ %@ %@", @"Compartiendo la foto de:", friends[sender.tag] , @"desde la app del curso de iOS."];
+    UIImage *imgShare    = [UIImage imageNamed:friendImages[sender.tag]];
+    NSArray *aShareItems = @[imgShare, strShareMsg];
+    
+    UIActivityViewController *actViewController = [[UIActivityViewController alloc] initWithActivityItems:aShareItems applicationActivities:nil];
+    
+    actViewController.excludedActivityTypes = [NSArray arrayWithObjects:UIActivityTypePrint, UIActivityTypeAssignToContact, UIActivityTypeCopyToPasteboard, UIActivityTypeAirDrop, UIActivityTypeMail, nil];
+
+    [self presentViewController:actViewController animated:YES completion:nil];
 }
 
 @end

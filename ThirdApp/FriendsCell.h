@@ -10,7 +10,7 @@
 
 @interface FriendsCell : UITableViewCell
 @property (strong, nonatomic) IBOutlet UILabel *txtFriend;
-@property (strong, nonatomic) IBOutlet UILabel *txtFriendShare;
 @property (strong, nonatomic) IBOutlet UIImageView *imgFriendCell;
+@property (strong, nonatomic) IBOutlet UIButton *btnShare;
 
 @end

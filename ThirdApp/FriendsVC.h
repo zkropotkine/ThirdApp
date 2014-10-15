@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface FriendsVC : UIViewController
+- (IBAction)shareAllButtonPressed:(id)sender;
 
+- (IBAction)shareButtonPressed:(UIButton *)sender;
 @end
