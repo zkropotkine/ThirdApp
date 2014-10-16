@@ -13,6 +13,8 @@
 @property (strong, nonatomic) IBOutlet UITextField *txtAeroline;
 @property (strong, nonatomic) IBOutlet UITextField *txtOrigin;
 @property (strong, nonatomic) IBOutlet UITextField *txtDestination;
-
+@property (strong, nonatomic) IBOutlet UIPickerView *pvAeroDatos;
+- (IBAction)btnSeePressed:(id)sender;
+- (IBAction)btnSharePressed:(id)sender;
 
 @end
