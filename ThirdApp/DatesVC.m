@@ -17,7 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    [self chan:nil];
     self.txtDateDiff.enabled = NO;
 }
 
@@ -27,51 +27,42 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-
-- (IBAction)startDateEditingFinished:(id)sender
-{
-    NSLog(@"FAD");
-    NSLocale *usLocale = [[NSLocale alloc]
-                          initWithLocaleIdentifier:@"en_US"];
-    
-    NSDate *pickerDate = [self.dpStartDate date];
-    
-    NSString *selectionString = [[NSString alloc]
-                                 initWithFormat:@"%@",
-                                 [pickerDate descriptionWithLocale:usLocale]];
-    
-    self.txtDateDiff.text = selectionString;
-    self.txtDateDiff.adjustsFontSizeToFitWidth = YES;
-}
-
-- (IBAction)finishDateEditiingFinished:(id)sender
-{
-    NSLocale *usLocale = [[NSLocale alloc]
-                          initWithLocaleIdentifier:@"en_US"];
-    
-    NSDate *pickerDate = [self.dpFinishDate date];
-    
-    NSString *selectionString = [[NSString alloc]
-                                 initWithFormat:@"%@",
-                                 [pickerDate descriptionWithLocale:usLocale]];
-    
-    self.txtDateDiff.text = selectionString;
-    self.txtDateDiff.adjustsFontSizeToFitWidth = YES;
-}
 - (IBAction)chan:(id)sender
 {
     NSLog(@"FAD");
-    NSLocale *usLocale = [[NSLocale alloc]
-                          initWithLocaleIdentifier:@"en_US"];
+    //NSLocale *usLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
     
-    NSDate *pickerDate = [self.dpStartDate date];
+    NSDate *startPickerDate = [self.dpStartDate date];
+    NSDate *finishPickerDate = [self.dpFinishDate date];
     
-    NSString *selectionString = [[NSString alloc]
-                                 initWithFormat:@"%@",
-                                 [pickerDate descriptionWithLocale:usLocale]];
+    NSCalendar *c = [NSCalendar currentCalendar];
+    NSDateComponents *components = [c components:NSDayCalendarUnit fromDate:startPickerDate toDate:finishPickerDate options:0];
+    NSInteger diff = components.day;
     
-    self.txtDateDiff.text = selectionString;
+    NSString *string = [NSString stringWithFormat:@"%d days", ABS(diff)];
+    
+    self.txtDateDiff.text = string;
     self.txtDateDiff.adjustsFontSizeToFitWidth = YES;
+    
+}
+
+- (IBAction)shareButtonPressed:(id)sender {
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"MMMM-dd-yyyy"];
+    NSString *strDate = [dateFormatter stringFromDate:self.dpStartDate.date];
+    NSString *finishDate = [dateFormatter stringFromDate:self.dpFinishDate.date];
+    
+    
+    
+    NSString *strShareMsg = [NSString stringWithFormat:@"%@ %@ %@ %@ %@ %@.", @"Los dias de diferencia entre", strDate, @"y", finishDate, @"son", self.txtDateDiff.text];
+    
+    NSArray *aShareItems = @[strShareMsg];
+    
+    UIActivityViewController *actViewController = [[UIActivityViewController alloc] initWithActivityItems:aShareItems applicationActivities:nil];
+    
+    actViewController.excludedActivityTypes = [NSArray arrayWithObjects:UIActivityTypePrint, UIActivityTypeAssignToContact, UIActivityTypeCopyToPasteboard, UIActivityTypeAirDrop, UIActivityTypeMail, nil];
+    
+    [self presentViewController:actViewController animated:YES completion:nil];
 }
 @end

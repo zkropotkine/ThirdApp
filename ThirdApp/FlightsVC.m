@@ -31,7 +31,7 @@ NSMutableArray *friendImages;
     destinationFlight = [NSMutableArray arrayWithObjects: @"Guadalajara", @"Cancun", @"Chiapas", @"Tijuana", @"Monterrey", nil];
     friendImages  = [NSMutableArray arrayWithObjects: @"bart.png", @"homer.png", @"lisa.png", @"marge.png", @"ruprecht.png", @"scully.png", @"bobo.png", nil];
     
-     [self btnSeePressed:nil];
+    [self btnSeePressed:nil];
 }
 
 - (void)didReceiveMemoryWarning {
